@@ -140,11 +140,11 @@ export const mockData: { [key: string]: ProductDetails } = {
     name: "",
     description: "",
     properties: {},
-    img: ""
+    img: "coolant-sump-cleaner/sump_cleaner.png"
   },
   "JT-WDC": {
-    name: "",
-    description: "",
+    name: "tech Wood Dust Collector",
+    description: "JTech wood dust collector is a highly efficient and essential tool in any woodworking workshop. It is specifically designed to remove wood dust and debris from the air, creating a cleaner and healthier working environment. The dust collector utilizes a powerful motor and fan system to suck up the wood dust generated during cutting, sanding, and shaping wood. It effectively captures the airborne particles and traps them within its filtration system, preventing them from spreading throughout the workshop.",
     properties: [
   {
     "Power (HP)": 1,
@@ -195,12 +195,147 @@ export const mockData: { [key: string]: ProductDetails } = {
     "Filter Type (Barrel)": "Single/Double"
   }
 ],
-img: ""
+img: "cartridge-dust-collector/dust_collector.png"
   },
   "JT-PDC": {
     name: "",
-    description: "",
-    properties: {},
-    img: ""
+    description: "JTech portable dust collectors are high-quality and versatile solutions for industrial and commercial applications that require efficient dust and debris removal. Designed to improve air quality and reduce health and safety risks, these dust collectors offer exceptional suction power and portability, making them ideal for a wide range of industries such metalworking, construction, and more. One of the standout features of JTech portable dust collectors is their superior suction capabilities. Equipped with powerful motors, these units can effectively extract dust, chips, and other particles from the air, ensuring a cleaner and healthier working environment. The high airflow rates and strong suction force efficiently capture even the finest particles, preventing them from circulating in the air and settling on surfaces.",
+    properties:
+[
+  {
+    "motor": "0.5 HP",
+    "voltage": "415 V, 50 Hz",
+    "vacuum": "165 mm WG",
+    "airFlow": "400 m3/hr",
+    "dustCollection": "7 ltrs"
+  },
+  {
+    "motor": "1 HP",
+    "voltage": "415 V, 50 Hz",
+    "vacuum": "215 mm WG",
+    "airFlow": "600 m3/hr",
+    "dustCollection": "7 ltrs"
+  },
+  {
+    "motor": "3 HP",
+    "voltage": "415 V, 50 Hz",
+    "vacuum": "575 mm WG",
+    "airFlow": "950 m3/hr",
+    "dustCollection": "15 ltrs"
+  },
+  {
+    "motor": "3 HP (Belt Drive)",
+    "voltage": "415 V, 50 Hz",
+    "vacuum": "500 mm WG",
+    "airFlow": "1100 m3/hr",
+    "dustCollection": "15 ltrs"
+  }
+]
+,
+    img: "cartridge-dust-collector/dust_collector.png"
+  },
+  "JT-SP-VC": {
+    name: "Single Phase Vacuum Cleaner",
+    description: "Jtech industrial single phase vacuum cleaner is a powerful, durable, and efficient cleaning solution designed for industrial and commercial use. With its strong suction capabilities, large capacity, and advanced filtration systems, it provides a reliable and effective cleaning solution for a range of applications.",
+    img: "single-phase-vacuum-cleaner/60_Ltr_2_Motor.png",
+    properties: [
+  {
+    "capacity": "10 Ltr",
+    "power": "1000W",
+    "voltage": "220V",
+    "airflow": "42 L/Min",
+    "function": "Dry",
+    "accessories": "36MM",
+    "cableLength": "7M",
+    "coolingMode": "Recycle",
+    "dimension": "40x40x52 Cm",
+    "grossWeight": "10 Kg"
+  },
+  {
+    "capacity": "15 Ltr",
+    "power": "1000W",
+    "voltage": "220V",
+    "airflow": "48 L/Min",
+    "function": "Wet & Dry",
+    "accessories": "36MM",
+    "cableLength": "7.2M",
+    "coolingMode": "Recycle",
+    "dimension": "43x43x61 Cm",
+    "grossWeight": "12.6 Kg"
+  },
+  {
+    "capacity": "30 Ltr",
+    "power": "1200W",
+    "voltage": "220V",
+    "airflow": "53 L/Min",
+    "function": "Wet & Dry",
+    "accessories": "38MM",
+    "cableLength": "7.2M",
+    "coolingMode": "Recycle",
+    "dimension": "43x43x80 Cm",
+    "grossWeight": "14.1 Kg"
+  },
+  {
+    "capacity": "60 Ltr",
+    "power": "2000W",
+    "voltage": "220V",
+    "airflow": "106 L/Min",
+    "function": "Wet & Dry",
+    "accessories": "38MM",
+    "cableLength": "7.2M",
+    "coolingMode": "Recycle",
+    "dimension": "63x55x97 Cm",
+    "grossWeight": "24.8 Kg"
+  },
+  {
+    "capacity": "80 Ltr",
+    "power": "3000W",
+    "voltage": "220V",
+    "airflow": "106 L/Min",
+    "function": "Wet & Dry",
+    "accessories": "38MM",
+    "cableLength": "7.2M",
+    "coolingMode": "Recycle",
+    "dimension": "63x55x102 Cm",
+    "grossWeight": "27.8 Kg"
+  }
+]
+  },
+  "JT-VMCE": {
+        name: "",
+    description: "Metal chip extraction is a crucial process in industries dealing with metalworking operations. Metal chips, shavings, and dust generated during machining processes can pose serious health hazards to workers and compromise the efficiency and longevity of machines. To address this issue, JTech has developed an advanced Vacuum Metal Chips Extractor that combines power, convenience, and efficiency to provide an effective solution for metal chip extraction. The JTech Vacuum Metal Chips Extractor is designed to fit a variety of metalworking machines, including lathes, milling machines, grinders, and CNC machines. It features a high-powered vacuum system capable of efficiently collecting metal chips and shavings from the working area. Equipped with a strong suction mechanism, this extractor ensures that no chips or dust particles are left behind, preventing their dispersion into the air.",
+    properties: [
+  {
+    "model": "JTES-CE-3",
+    "motorType": "Fan",
+    "suctionInletDiameter_mm": 100,
+    "numberOfSuctionInlets": 2,
+    "tankCapacity_l": 160,
+    "capacity_m2_per_h": 1000,
+    "depression_mbar": 25,
+    "motorPower_kW_hp": "2.2/3",
+    "motorSpeed_rpm": 2800,
+    "voltage": "415/50 V-Hz",
+    "weight_kg": 115,
+    "filter": "Star Type",
+    "filterCleaning": "Manual Hand Shaker"
+  },
+  {
+    "model": "JTES-CE-5",
+    "motorType": "Fan",
+    "suctionInletDiameter_mm": 100,
+    "numberOfSuctionInlets": 2,
+    "tankCapacity_l": 160,
+    "capacity_m2_per_h": 1400,
+    "depression_mbar": 25,
+    "motorPower_kW_hp": "3.7/5",
+    "motorSpeed_rpm": 2800,
+    "voltage": "415/50 V-Hz",
+    "weight_kg": 135,
+    "filter": "Star Type",
+    "filterCleaning": "Manual Hand Shaker"
+  }
+],
+    img: "chips-extractor/metal-chip-extractor.png"
   }
 };

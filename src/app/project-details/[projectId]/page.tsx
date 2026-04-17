@@ -39,9 +39,11 @@ export async function generateStaticParams() {
     { projectId: "JTES-KD350" },
     { projectId: "JT-LC-WB" },
     { projectId: "JT-LC-VM" },
+    { projectId: "JT-SP-VC" },
     { projectId: "JT-CSC" },
     { projectId: "JT-WDC" },
-    { projectId: "JT-PDC" }
+    { projectId: "JT-PDC" },
+    { projectId: "JT-VMCE" }
   ];
 }
 

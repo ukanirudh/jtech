@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import project_details_img_1 from "@/assets/images/leaf-collectors/LC-1.png";
+// import project_details_img_1 from "@/assets/images/leaf-collectors/LC-1.png";
 // import project_details_img_2 from "@/assets/images/resource/service3.png";
 import { ProductDetails } from '@/data/ProductDetails';
 

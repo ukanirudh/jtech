@@ -13,7 +13,8 @@ enum CATEGORY {
 	LEAF_COLLECTOR = "Leaf Collector",
 	VACCUM_CLEANER = "Vaccum Cleaner",
 	SUMP_CLEANER = "Sump Cleaner",
-	DUST_COLLECTOR = "Dust Collector"
+	DUST_COLLECTOR = "Dust Collector",
+	METAL_CHIPS_EXTRACTOR = "Metal Chips Extractor"
 }
 
 const project_data:DataType[] = [
@@ -94,6 +95,13 @@ const project_data:DataType[] = [
 		title: "Jtech Portable Dust Collector",
 		category: CATEGORY.DUST_COLLECTOR,
 	},
+	{
+		id: "JT-VMCE",
+		img: "chips-extractor/metal-chip-extractor.png",
+		name: "JTech Vacuum Metal Chips Extractor",
+		title: "JTech Vacuum Metal Chips Extractor: Efficient Solution for Metal Chip Extraction",
+		category: CATEGORY.METAL_CHIPS_EXTRACTOR,
+	}
 ];
 
 export const ROOT_CATEGORIES: DataType[] = [
@@ -110,6 +118,13 @@ export const ROOT_CATEGORIES: DataType[] = [
 		name: "Vaccum Cleaner",
 		title: "Vaccum Cleaners",
 		category: CATEGORY.VACCUM_CLEANER,
+	},
+	{
+		id: "JT-MCE",
+		img: "chips-extractor/metal-chip-extractor.png",
+		name: "Metal Chips Extractor",
+		title: "Metal Chips Extractor",
+		category: CATEGORY.METAL_CHIPS_EXTRACTOR
 	},
 	{
 		id: "JT-SCS",
