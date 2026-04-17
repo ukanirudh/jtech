@@ -137,13 +137,13 @@ export const mockData: { [key: string]: ProductDetails } = {
     img: "leaf-collectors/LC-1.png"
   },
   "JT-CSC": {
-    name: "",
+    name: "Jtech Coolant Sump Cleaner",
     description: "",
     properties: {},
     img: "coolant-sump-cleaner/sump_cleaner.png"
   },
   "JT-WDC": {
-    name: "tech Wood Dust Collector",
+    name: "Jtech Wood Dust Collector",
     description: "JTech wood dust collector is a highly efficient and essential tool in any woodworking workshop. It is specifically designed to remove wood dust and debris from the air, creating a cleaner and healthier working environment. The dust collector utilizes a powerful motor and fan system to suck up the wood dust generated during cutting, sanding, and shaping wood. It effectively captures the airborne particles and traps them within its filtration system, preventing them from spreading throughout the workshop.",
     properties: [
   {
@@ -198,7 +198,7 @@ export const mockData: { [key: string]: ProductDetails } = {
 img: "cartridge-dust-collector/dust_collector.png"
   },
   "JT-PDC": {
-    name: "",
+    name: "Jtech Portable Dust Collector",
     description: "JTech portable dust collectors are high-quality and versatile solutions for industrial and commercial applications that require efficient dust and debris removal. Designed to improve air quality and reduce health and safety risks, these dust collectors offer exceptional suction power and portability, making them ideal for a wide range of industries such metalworking, construction, and more. One of the standout features of JTech portable dust collectors is their superior suction capabilities. Equipped with powerful motors, these units can effectively extract dust, chips, and other particles from the air, ensuring a cleaner and healthier working environment. The high airflow rates and strong suction force efficiently capture even the finest particles, preventing them from circulating in the air and settling on surfaces.",
     properties:
 [
@@ -302,7 +302,7 @@ img: "cartridge-dust-collector/dust_collector.png"
 ]
   },
   "JT-VMCE": {
-        name: "",
+    name: "JTech Vacuum Metal Chips Extractor: Efficient Solution for Metal Chip Extraction",
     description: "Metal chip extraction is a crucial process in industries dealing with metalworking operations. Metal chips, shavings, and dust generated during machining processes can pose serious health hazards to workers and compromise the efficiency and longevity of machines. To address this issue, JTech has developed an advanced Vacuum Metal Chips Extractor that combines power, convenience, and efficiency to provide an effective solution for metal chip extraction. The JTech Vacuum Metal Chips Extractor is designed to fit a variety of metalworking machines, including lathes, milling machines, grinders, and CNC machines. It features a high-powered vacuum system capable of efficiently collecting metal chips and shavings from the working area. Equipped with a strong suction mechanism, this extractor ensures that no chips or dust particles are left behind, preventing their dispersion into the air.",
     properties: [
   {
