@@ -43,7 +43,8 @@ export async function generateStaticParams() {
     { projectId: "JT-CSC" },
     { projectId: "JT-WDC" },
     { projectId: "JT-PDC" },
-    { projectId: "JT-VMCE" }
+    { projectId: "JT-VMCE" },
+    { projectId: "JT-TP-VC" }
   ];
 }
 

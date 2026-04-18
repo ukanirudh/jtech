@@ -5,7 +5,7 @@ export interface ProductDetails {
     name: string;
     description: string;
     properties: Properties;
-    img?: string;
+    img?: string | Array<string>;
 }
 
 export const mockData: { [key: string]: ProductDetails } = {
@@ -233,6 +233,98 @@ img: "cartridge-dust-collector/dust_collector.png"
 ]
 ,
     img: "cartridge-dust-collector/dust_collector.png"
+  },
+  "JT-TP-VC": {
+    name: "Heavy Duty Industrial Vacuum Cleaner",
+    description: "The JTech Heavy Duty Industrial Vacuum Cleaner is a powerful and reliable solution designed specifically for challenging industrial cleaning applications. Built with a high-performance motor, heavy-gauge body, and advanced HEPA filtration, it ensures superior suction performance, long-lasting durability, and safety across a wide range of industries. Whether it's fine dust, heavy metal chips, or wet waste, this vacuum cleaner delivers consistent results with minimal maintenance. Available in 60L and 80L tank capacities, and suitable for both wet and dry use, it is the perfect choice for factories, warehouses, foundries, construction sites, and more. JTech’s industrial vacuum system is not just a machine—it’s a dependable workhorse built to keep your operation clean, compliant, and efficient.",
+    // img: "heavy-duty-vacuum-cleaner/vacuum_cleaner_4.png",
+    img: [
+      "heavy-duty-vacuum-cleaner/vacuum_cleaner_2.png",
+      "heavy-duty-vacuum-cleaner/vacuum_cleaner_3.png",
+      "heavy-duty-vacuum-cleaner/vacuum_cleaner_4.png",
+    ],
+    properties: [
+  {
+    "Model": "JTES - KD140",
+    "Type": "DRY",
+    "Power_HP": 1,
+    "Voltage": "415-50/220-50",
+    "SuctionPower_MMWC": 1400,
+    "MaxAirFlow_CMH": 120,
+    "SuctionInlet_mm": 40,
+    "NoiseLevel_dB": 65,
+    "BlowerType": "RGB",
+    "Motor_RPM": 2880,
+    "FilterType": "Star",
+    "Capacity_Ltr": 30,
+    "CleaningSystem": "Manual",
+    "DischargeSystem": "Rollout Container"
+  },
+  {
+    "Model": "JTES - KD250",
+    "Type": "DRY",
+    "Power_HP": 3,
+    "Voltage": "415-50/220-50",
+    "SuctionPower_MMWC": 1850,
+    "MaxAirFlow_CMH": 270,
+    "SuctionInlet_mm": 75,
+    "NoiseLevel_dB": 75,
+    "BlowerType": "RGB",
+    "Motor_RPM": 2880,
+    "FilterType": "Star",
+    "Capacity_Ltr": 60,
+    "CleaningSystem": "Manual",
+    "DischargeSystem": "Rollout Container"
+  },
+  {
+    "Model": "JTES - KD250 (I)",
+    "Type": "WET & DRY",
+    "Power_HP": 3,
+    "Voltage": "415-50/220-50",
+    "SuctionPower_MMWC": 1850,
+    "MaxAirFlow_CMH": 270,
+    "SuctionInlet_mm": 75,
+    "NoiseLevel_dB": 75,
+    "BlowerType": "RGB",
+    "Motor_RPM": 2880,
+    "FilterType": "Star",
+    "Capacity_Ltr": 60,
+    "CleaningSystem": "Manual",
+    "DischargeSystem": "Rollout Container"
+  },
+  {
+    "Model": "JTES - KD310",
+    "Type": "WET & DRY",
+    "Power_HP": 5,
+    "Voltage": "415-50",
+    "SuctionPower_MMWC": 2900,
+    "MaxAirFlow_CMH": 400,
+    "SuctionInlet_mm": 75,
+    "NoiseLevel_dB": 75,
+    "BlowerType": "RGB",
+    "Motor_RPM": 2880,
+    "FilterType": "Star",
+    "Capacity_Ltr": 100,
+    "CleaningSystem": "Manual",
+    "DischargeSystem": "Rollout Container"
+  },
+  {
+    "Model": "JTES - KD350",
+    "Type": "WET & DRY",
+    "Power_HP": 7.5,
+    "Voltage": "415-50",
+    "SuctionPower_MMWC": 3400,
+    "MaxAirFlow_CMH": 459,
+    "SuctionInlet_mm": 75,
+    "NoiseLevel_dB": 75,
+    "BlowerType": "RGB",
+    "Motor_RPM": 2880,
+    "FilterType": "Star",
+    "Capacity_Ltr": 100,
+    "CleaningSystem": "Manual",
+    "DischargeSystem": "Rollout Container"
+  }
+]
   },
   "JT-SP-VC": {
     name: "Single Phase Vacuum Cleaner",

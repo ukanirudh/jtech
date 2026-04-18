@@ -47,16 +47,36 @@ const ProjectDetailsArea = ({ product }: { product: ProductDetails}) => {
               <p>{product.description}</p>
             </div>
 
-            <div className={!Array.isArray(product.properties) ? "col-lg-6 col-md-6" : "col-lg-12 col-md-12"}>
-              <div className="projetct-details-image">
-                <Image
-                  src={`/assets/images/${product.img}`}
-                  fill
-                  style={{ objectFit: 'contain' }} // or 'cover', depending on your design
-                  sizes="100vw"
-                  alt={product.name + 'image'}
-                />
-              </div>
+            <div className={!Array.isArray(product.properties) ? "col-lg-6 col-md-6" : "row"}>
+              {
+                !Array.isArray(product.img) ? (
+                  <div className="projetct-details-image">
+                    <Image
+                      src={`/assets/images/${product.img}`}
+                      fill
+                      style={{ objectFit: 'contain' }} // or 'cover', depending on your design
+                      sizes="100vw"
+                      alt={product.name + 'image'}
+                    />
+                </div>
+                ) : (
+                  product.img.map((imageUrl) => {
+                    return (
+                      <div key={imageUrl} className='col'>
+                      <div className="projetct-details-image" >
+                        <Image
+                          src={`/assets/images/${imageUrl}`}
+                          fill
+                          style={{ objectFit: 'contain' }} // or 'cover', depending on your design
+                          sizes="100vw"
+                          alt={product.name + 'image'}
+                        />
+                      </div>
+                      </div>
+                    )
+                  })
+                )
+              }
             </div>
             <div className={!Array.isArray(product.properties) ? "col-lg-6 col-md-6" : "col-lg-12 col-md-12"}>
               <div className="info-area">

@@ -3,6 +3,7 @@ import project_data, { ROOT_CATEGORIES } from '@/data/ProjectData';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { useRouter } from "next/navigation";
 
 // data
 const categories = [...new Set(project_data.map((item) => item.category))];
@@ -13,6 +14,8 @@ const ProjectGridArea = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [items, setItems] = useState(ROOT_CATEGORIES);
   // const [next, setNext] = useState(perView);
+    const router = useRouter();
+
 
   const filterItems = (cateItem: string) => {
     setActiveCategory(cateItem);
@@ -30,6 +33,11 @@ const ProjectGridArea = () => {
   // const handleLoadMore = () => {
   //   setNext((value) => value + 3);
   // };
+
+  const onProductClick = (itemId: string) => {
+    // router.push(`/project-details/${itemId}`);
+    window.open(`/project-details/${itemId}`, "_blank", "noopener,noreferrer");
+  }
 
   return (
     <>
@@ -84,11 +92,11 @@ const ProjectGridArea = () => {
                       alt="image-title"
                     />
                   </div>
-                  <div className="project-content">
+                  <div className="project-content" onClick={activeCategory == 'All' ? () => {} : () => onProductClick(item.id)}>
                     <h4>
                       {
                       activeCategory == 'All' ?
-                        <>{item.title}</>  : <Link href={`/project-details/${item.id}`}>{item.title}</Link>
+                        <>{item.title}</>  : <Link href={`/project-details/${item.id}`} target="_blank" rel="noopener noreferrer">{item.title}</Link>
                       }
                      </h4>
                     <span>{item.category}</span>
