@@ -46,6 +46,7 @@ const contact_content: DataType = {
 const { subtitle, title, sm_info, contact_data } = contact_content
 
 const ContactArea = () => {
+
   return (
     <>
       <div className="contact-section">

@@ -4,10 +4,9 @@ import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
 export const metadata = {
-  title: 'Project Grid - SolerPanel-Solar & Renewable Energy React Next js Template',
-  description: 'The Solar Panel React Next js template is a modern and responsive design specifically created for websites related to solar energy and renewable energy solutions',
+  title: 'Products - JTech Engineering Systems LLP',
+  description: 'JTech Engineering Systems LLP - leading manufacturer of heavy-duty industrial vacuum cleaners, portable dust collectors, vacuum leaf collectors, coolant sump cleaners, and other specialized cleaning equipment',
 }
-
 
 
 const index = () => {
