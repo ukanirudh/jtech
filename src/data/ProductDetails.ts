@@ -138,8 +138,39 @@ export const mockData: { [key: string]: ProductDetails } = {
   },
   "JT-CSC": {
     name: "Jtech Coolant Sump Cleaner",
-    description: "",
-    properties: {},
+    description: "Powerful oil recycling unit designed for efficient coolant and metal scrap separation, equipped with a side channel blower motor for heavy and continuous usage. It features a sturdy basket for scrap recovery along with an optional 100-micron SS filter for fine particle collection, and a level indicator to monitor liquid accumulation. An electrical float system automatically cuts off the motor when the tank is full, ensuring safe operation. The unit comes with heavy-duty anti-slippery fixed and rotating wheels with brakes for easy mobility, along with a flexible suction inlet hose that allows convenient handling and full coverage around the machine. The electrical panel includes a rotary switch with LOTO, emergency stop switch, and push buttons with power-on indication. It also has a large opening for easy maintenance of the recovery tank and is suitable for use in engineering as well as food processing units.",
+    properties: [
+  {
+    "model": "Jtech CSC - 300",
+    "Voltage": "415/50 Volts/Hz",
+    "Phase": "3",
+    "Power": "3.7/5 kW/hp",
+    "Vacuum Pressure": "2900 MMWC",
+    "Air Flow": "400 CMH",
+    "Delivery Flow Rate": "300 lpm",
+    "Container Capacity": "300 Liters",
+    "Chip Basket Capacity": "50 Liters",
+    "Suction Inlet": "50 mm",
+    "Filter Type": "S.S Filter",
+    "Sound Level": "75 dB",
+    "Weight": "250 Kg"
+  },
+  {
+    "model": "Jtech CSC - 400",
+    "Voltage": "415/50 Volts/Hz",
+    "Phase": "3",
+    "Power": "3.7/5 kW/hp",
+    "Vacuum Pressure": "2900 MMWC",
+    "Air Flow": "400 CMH",
+    "Delivery Flow Rate": "300 lpm",
+    "Container Capacity": "400 Liters",
+    "Chip Basket Capacity": "75 Liters",
+    "Suction Inlet": "60 mm",
+    "Filter Type": "S.S Filter",
+    "Sound Level": "75 dB",
+    "Weight": "280 Kg"
+  }
+],
     img: "coolant-sump-cleaner/sump_cleaner.png"
   },
   "JT-WDC": {
@@ -194,8 +225,8 @@ export const mockData: { [key: string]: ProductDetails } = {
     "Motor (RPM)": 2880,
     "Filter Type (Barrel)": "Single/Double"
   }
-],
-img: "cartridge-dust-collector/dust_collector.png"
+    ],
+    img: "cartridge-dust-collector/wood-dust-collector.png"
   },
   "JT-PDC": {
     name: "Jtech Portable Dust Collector",

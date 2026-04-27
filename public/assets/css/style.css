@@ -467,7 +467,8 @@ a.handbag:before {
 ===================================================*/
 
 .slider-section {
-    background: url(../images/slider/slider-bg.jpg);
+    /* background: url(../images/slider/slider-bg.jpg); */
+    background: url(../images/homepage.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -484,24 +485,24 @@ a.handbag:before {
 .slider-content h4 {
     font-size: 24px;
     line-height: 24px;
-    color: #fefefe;
+    color: #8fcc0a;
     font-weight: 500;
     margin-bottom: 28px;
 }
 
 .slider-content h1 {
-    font-size: 75px;
+    font-size: 60px;
     line-height: 72px;
-    color: #ffffff;
+    color: black;
     font-weight: 600;
 }
 
 .slider-content p {
     font-size: 16px;
     line-height: 24px;
-    color: #ffffff;
+    color: #8fcc0a;
     font-weight: 400;
-    width: 53%;
+    width: 40%;
     margin: 37px 0 50px;
 }
 
