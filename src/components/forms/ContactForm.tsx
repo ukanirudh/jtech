@@ -39,23 +39,43 @@ const ContactForm = () => {
   const { register, handleSubmit, reset, formState: { errors }, } = useForm<FormData>({ resolver: yupResolver(schema), });
   const notify = () => toast("Message send successful");
 
-  const onSubmit = (data: FormData) => {   
+  const onSubmit = async (data: FormData) => {   
     console.log(data);
 
 
-    emailjs.sendForm(
+      try {
+    // 1. Send email to YOU
+    await emailjs.send(
       process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-      formRef.current!
-    ).then(
-      () => {
-        reset();
-        notify()
-      },
-      (error) => console.error("FAILED", error)
+      process.env.NEXT_PUBLIC_EMAILJS_CONTACT_TEMPLATE_ID!, // admin template
+      {
+        name: data.fullname,
+        email: data.email,
+        title: data.title,
+        company: data.company,
+        message: data.message,
+        phone: data.phone,
+        time: Date.now()
+      }
     );
 
-  };
+    // 2. Send auto-reply to USER
+    await emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAILJS_AUTOREPLY_TEMPLATE_ID!, // second template
+      {
+        name: data.fullname,
+        email: data.email,
+        title: data.title,
+      }
+    );
+
+    notify();
+    reset();
+  } catch (error) {
+    console.error("FAILED", error);
+  }
+};
 
 
   return (
