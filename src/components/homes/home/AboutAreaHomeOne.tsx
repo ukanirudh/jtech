@@ -71,7 +71,7 @@ const AboutAreaHomeOne = (style: any) => {
                   <div className="about-counter">
                     <div className="about-counter-text">
                       <div className="about-numbar">
-                        <h4 className="counter">29</h4>
+                        <h4 className="counter">10</h4>
                         <span>+</span>
                       </div>
                       <div className="about-text">
@@ -84,7 +84,7 @@ const AboutAreaHomeOne = (style: any) => {
                       <Image src={about_shape} alt="image-title" />
                     </div>
                     <div className="about-number-two">
-                      <h4 className="counter">2900</h4>
+                      <h4 className="counter">1000</h4>
                       <span>+</span>
                       <h5>Satisfied Clients</h5>
                     </div>

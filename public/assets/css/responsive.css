@@ -65,10 +65,6 @@
 
 	/* contact us section title */
 
-	.section-main-title.contact-us h2 {
-		font-size: 40px;
-		margin-left: -130px;
-	}
 
 	/* choose us section title */
 
@@ -372,11 +368,6 @@
 	}
 
 	/* contact us section title */
-
-	.section-main-title.contact-us h2 {
-		font-size: 40px;
-		margin-left: -130px;
-	}
 
 	/* service section */
 
@@ -839,10 +830,6 @@
 		display: none;
 	}
 
-	.section-main-title.contact-us h2 {
-		font-size: 34px;
-	}
-
 	.solar-btn.contact-us {
 		text-align: right !important;
 		display: block;
@@ -1299,10 +1286,6 @@
 
 	.contact-us-section::before {
 		display: none;
-	}
-
-	.section-main-title.contact-us h2 {
-		font-size: 34px;
 	}
 
 	.solar-btn.contact-us {
@@ -1884,10 +1867,6 @@
 
 	.contact-us-section::before {
 		display: none;
-	}
-
-	.section-main-title.contact-us h2 {
-		font-size: 29px;
 	}
 
 	.solar-btn.contact-us {
@@ -2587,10 +2566,6 @@
 
 	.contact-us-section::before {
 		display: none;
-	}
-
-	.section-main-title.contact-us h2 {
-		font-size: 23px;
 	}
 
 	.contact-us-discription p {

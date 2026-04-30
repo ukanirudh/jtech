@@ -17,7 +17,7 @@ const hero_slider_data: DataType[] = [
     id: 1,
     subtitle: "JTech Engineering Systems LLP",
     title: <>Enhance workplace <br/>cleanliness and safety </>,
-    sm_des: "The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity",
+    sm_des: "From shop floor contamination to equipment failure, the effects of poor cleaning are evident. Still, a significant number of industries remain without advanced industrial cleaning systems.",
   },
   // {
   //   id: 2,

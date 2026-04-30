@@ -1,11 +1,14 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 
-import offer_icon_1 from "@/assets/images/resource/offer-icon1.png";
-import offer_icon_2 from "@/assets/images/resource/offer-icon2.png";
-import offer_icon_3 from "@/assets/images/resource/offer-icon3.png";
+// import offer_icon_1 from "@/assets/images/resource/offer-icon1.png";
+// import offer_icon_2 from "@/assets/images/resource/offer-icon2.png";
+// import offer_icon_3 from "@/assets/images/resource/offer-icon3.png";
+import offer_icon_1 from "@/assets/images/svgs/AdvancedDustControl";
+import offer_icon_2 from "@/assets/images/svgs/HighPeformanceCleaning";
+import offer_icon_3 from "@/assets/images/svgs/IntegratedRecoverySystem";
 import offer_thumb from "@/assets/images/resource/offer-thumb.png";
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
 
 interface DataType {
@@ -13,7 +16,7 @@ interface DataType {
   title_1: string;
   title_2: string;
   feature: {
-    icon: StaticImageData;
+    icon: React.ElementType;
     title: string;
     sm_des: string;
   }[];
@@ -22,23 +25,23 @@ interface DataType {
 
 const offer_content: DataType = {
   subtitle: "What We Offer",
-  title_1: "Taking The Effort Out Of",
-  title_2: "Business Energy",
+  title_1: "Optimizing Cleanliness Across",
+  title_2: "Every Process",
   feature: [
     {
       icon: offer_icon_1,
-      title: "Battery Storage",
-      sm_des: "Solar PV, Battery Storage Heat Recovery",
+      title: "Advanced Dust Control",
+      sm_des: "Captures dust at the source for cleaner operations.",
     },
     {
       icon: offer_icon_2,
-      title: "Energy Around",
-      sm_des: "Solar PV, Battery Storage Heat Recovery",
+      title: "High-Performance Cleaning",
+      sm_des: "Ensures fast, efficient removal of dust and debris.",
     },
     {
       icon: offer_icon_3,
-      title: "Solar PV Systems",
-      sm_des: "Solar PV, Battery Storage Heat Recovery",
+      title: "Integrated Recovery Systems",
+      sm_des: "Recovers the coolant and the waste to reduce losses.",
     }
 
   ]
@@ -49,12 +52,12 @@ const { subtitle, title_1, title_2, feature } = offer_content
 const OfferAreaHomeOne = () => {
 
   const [percentage1, setPercentage1] = useState(90);
-  const [percentage2, setPercentage2] = useState(69);
+  // const [percentage2, setPercentage2] = useState(69);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setPercentage1(75);
-      setPercentage2(50);
+      setPercentage1(80);
+      // setPercentage2(50);
     }, 5000);
 
     return () => clearTimeout(timer);
@@ -82,7 +85,8 @@ const OfferAreaHomeOne = () => {
                   <div key={i} className="col-lg-4 col-md-4 col-sm-6 col-6">
                     <div className="offer-items-box wow animate__slideInDown">
                       <div className="offer-icon-thumb">
-                        <Image src={item.icon} alt="image-title" />
+                        {/* <Image src={item.icon} alt="image-title" /> */}
+                        <item.icon />
                       </div>
                       <div className="offer-content">
                         <h4>{item.title}</h4>
@@ -101,13 +105,13 @@ const OfferAreaHomeOne = () => {
                     style={{ background: 'rgb(22, 181, 151)', width: `${percentage1}%`, transition: 'width 7s ease-in-out 0s' }}
                   ></span>
                 </div>
-                <span className="process-bar">Customer Satisficed</span>
-                <div id="bar2" className="barfiller">
+                {/* <span className="process-bar">Customer Satisficed</span> */}
+                {/* <div id="bar2" className="barfiller">
                   <span
                     className="fill my-class"
                     style={{ background: 'rgb(22, 181, 151)', width: `${percentage2}%`, transition: 'width 7s ease-in-out 0s' }}
                   ></span>
-                </div>
+                </div> */}
               </div>
 
             </div>

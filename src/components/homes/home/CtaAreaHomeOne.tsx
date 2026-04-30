@@ -3,8 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 
 const cta_content = {
-  title: "How We Create Solar Energy",
-  sm_des: "Building & Maintaining The Energy",
+  title: "How we implement energy-efficient, high-performance cleaning systems for process reliability",
+  sm_des: "Building & Maintaining clean workspace",
 }
 const { title, sm_des } = cta_content
 
@@ -12,13 +12,13 @@ const CtaAreaHomeOne = () => {
   return (
     <>
       <div className="contact-us-section">
-        <div className="container">
+        <div>
           <div className="row contact-us align-items-center">
-            <div className="col-lg-2"></div>
-            <div className="col-lg-7 col-md-6">
+            <div className="col-lg-3"></div>
+            <div className="col-lg-6 col-md-6">
               <div className="section-title wow animate__fadeInLeft">
                 <div className="section-main-title contact-us">
-                  <h2>{title}</h2>
+                  <h3>{title}</h3>
                 </div>
               </div>
               <div className="contact-us-discription wow animate__fadeInUp">

@@ -485,7 +485,7 @@ a.handbag:before {
 .slider-content h4 {
     font-size: 24px;
     line-height: 24px;
-    color: #8fcc0a;
+    /* color: #8fcc0a; */
     font-weight: 500;
     margin-bottom: 28px;
 }
@@ -500,7 +500,7 @@ a.handbag:before {
 .slider-content p {
     font-size: 16px;
     line-height: 24px;
-    color: #8fcc0a;
+    /* color: #8fcc0a; */
     font-weight: 400;
     width: 40%;
     margin: 37px 0 50px;
@@ -1003,10 +1003,12 @@ a.handbag:before {
 
 /* contact us section title */
 
- .section-main-title.contact-us h2 {
-    color: #ffff;
-    margin-bottom: 17px;
-}
+ .section-main-title.contact-us {
+    padding: 0 32px;
+    h3 {
+        color: #ffff;
+    }
+ }
 
 /* pricing section title */
 
@@ -1293,6 +1295,10 @@ a.handbag:before {
 .row.contact-us {
     background: #8fcc0a;
     padding: 50px 0 50px;
+}
+
+.contact-us-discription {
+    padding: 0 32px;
 }
 
 .contact-us-discription p {
@@ -2473,6 +2479,10 @@ span.fill {
 /*==================================================
  <-- Solar Panel  Footer Section Css-->
 ===================================================*/
+
+.footer-wiget-log {
+    width: 60%;
+}
 
 .footer-section {
     background: #1c1632;

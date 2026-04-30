@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 import HeaderLogoTwo from "@/assets/images/logo2.png";
 
-import HeaderLogo from "@/assets/images/logo.png";
+// import HeaderLogo from "@/assets/images/logo.png";
 
 import HeaderLogoJtech from "@/assets/images/jtes-logo-final-1.png";
 

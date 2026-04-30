@@ -4,34 +4,34 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { CopyRight, TeamSocialLinks } from '@/components/common/SocialLinks';
 
-import footer_logo from  "@/assets/images/resource/footer-logo.png";
+import footer_logo from  "@/assets/images/jtes-logo-final-1.png";
 import footer_thumb from  "@/assets/images/resource/footer-thumb.png";
 
 
 const footer_content = {
-  sm_info: "Feugiat a ligula rutrum luctus primis ultrice nteger congue magna at pretium purus a pretium ligula rutrum and luctus risus",
+  sm_info: "JTech Engineering Systems LLP is a leading manufacturer of heavy-duty industrial vacuum cleaners, portable dust collectors, vacuum leaf collectors, coolant sump cleaners, and other specialized cleaning equipment",
   list_title: "Industry Sectors",
   list_items: [
     {
       title: "Contact us",
       link: "/contact",
     },
-    {
-      title: "How it Works",
-      link: "#",
-    },
-    {
-      title: "Office Create",
-      link: "#",
-    },
-    {
-      title: "Residential Explore",
-      link: "#",
-    },
-    {
-      title: "Terms & Services",
-      link: "#",
-    },
+    // {
+    //   title: "How it Works",
+    //   link: "#",
+    // },
+    // {
+    //   title: "Office Create",
+    //   link: "#",
+    // },
+    // {
+    //   title: "Residential Explore",
+    //   link: "#",
+    // },
+    // {
+    //   title: "Terms & Services",
+    //   link: "#",
+    // },
   ],
   title: "Get In Touch",
   address: "Sy.No 24/3A, Bylakonehalli, Andrahalli main road, Bengaluru 562162",
@@ -54,7 +54,14 @@ const FooterOne = () => {
             <div className="col-lg-3 col-md-6">
               <div className="footer-wiget wow animate__zoomIn">
                 <div className="footer-wiget-log">
-                  <Link href="/"><Image src={footer_logo} alt="image-title" /></Link>
+                  <Link href="/">
+                    <Image 
+                      src={footer_logo} 
+                      alt="foooter logo"
+                      sizes="100vw"
+                      style={{ width: '100%', height: 'auto' }}
+                      />
+                  </Link>
                 </div>
                 <div className="footer-wiget-text">
                   <p>{sm_info}</p>
