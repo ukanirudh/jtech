@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react';
 import offer_icon_1 from "@/assets/images/svgs/AdvancedDustControl";
 import offer_icon_2 from "@/assets/images/svgs/HighPeformanceCleaning";
 import offer_icon_3 from "@/assets/images/svgs/IntegratedRecoverySystem";
-import offer_thumb from "@/assets/images/resource/offer-thumb.png";
+import offer_thumb from "@/assets/images/resource/home-page-what-offer.png";
 import Image from 'next/image';
 
 
